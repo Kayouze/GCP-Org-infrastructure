@@ -16,8 +16,8 @@ resource "google_compute_subnetwork" "us_subnet" {
   }
 
   secondary_ip_range {
-    range_name    = "services"       # Logical name for the services IP range
-    ip_cidr_range = "10.2.0.0/20"    # Adjust the range as needed (ensure it's within your VPC CIDR)
+    range_name    = "services"       
+    ip_cidr_range = "10.2.0.0/20"    
   }
 }
 
