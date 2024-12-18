@@ -21,24 +21,24 @@ resource "google_container_cluster" "primary_cluster" {
 
 resource "google_container_node_pool" "primary_nodes" {
   name       = "primary-node-pool"
-  cluster    = google_container_cluster.primary_cluster.name  # Referencing the cluster by name
+  cluster    = google_container_cluster.primary_cluster.name   
   location   = google_container_cluster.primary_cluster.location
 
   node_count = 2  
 
   node_config {
-    machine_type = "e2-medium"  # The type of VM instance for each node
+    machine_type = "e2-medium"    
 
     oauth_scopes = [
       "https://www.googleapis.com/auth/cloud-platform"
     ]
 
     labels = {
-      env = "production"  # Labels to help identify the node pool
+      env = "production"  
     }
 
     metadata = {
-      disable-legacy-endpoints = "true"  # Disable legacy endpoints
+      disable-legacy-endpoints = "true"   
     }
 
     disk_size_gb = 50   
