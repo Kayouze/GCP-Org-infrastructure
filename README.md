@@ -1,5 +1,5 @@
 # GCP-Org-infrastructure
-This project was designed to create and deploy a simple cloud infrastructure environment on GCP in 2 different regions for an organization using Terraform.
+This project was designed to configure and deploy a simple cloud infrastructure environment on GCP in 2 different regions for an organization using Terraform.
 It also involved the creation of various folders and subfolders on GCP using Terraform, these are often required for coordinating multiple operations by the organization.
 
 The following were achieved in this project:
